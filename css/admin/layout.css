@@ -1,0 +1,50 @@
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.header{
+  background-color: yellow;
+}
+
+.body{
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.aside{
+  background-color: green;
+}
+
+.main{
+  background-color: aliceblue;
+  flex-grow: 1;
+}
+
+/* footer를 바닥에 붙여놓기 */
+footer{
+  color: white;
+  background-color: black;
+}
+
+/* 너비 어느정도 이상이면 flex-direction 바꾸기 */
+
+@media (min-width:576px){
+  .body{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px){
+  .body{
+    flex-direction: row;
+  }
+}

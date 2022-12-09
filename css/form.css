@@ -1,0 +1,15 @@
+.input{
+
+}
+
+.input-chk{
+  width: 12px;
+  height: 12px;
+  border: 1px solid #a24f17;
+  box-sizing: border-box;
+}
+
+.input-chk-on{
+  background-color: #a24f17;
+}
+

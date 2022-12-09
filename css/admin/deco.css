@@ -1,0 +1,45 @@
+.deco{
+  display: inline-flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.deco:hover {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 2px;
+}
+
+.deco:hover::before {
+  background-color: yellow;
+}
+
+.deco::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+
+  background-color: green;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  transition: 0.5s;
+}
+
+.deco-note::before {
+  mask-image: url(../../image/note.svg);
+  -webkit-mask-image: url(../../image/note.svg);
+}
+
+.deco-category::before {
+  mask-image: url(../../image/category.svg);
+  -webkit-mask-image: url(../../image/category.svg);
+}
+
+
+/* -------------------deco utils----------------------------- */
+
+.deco-blue::before {
+  background-color: blue;
+}
+
